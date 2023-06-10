@@ -1,5 +1,5 @@
 # Script to load and set up data for analysis
-thedata <- readRDS("PoP_statespace-master/data/compiled_data.RDS")
+thedata <- readRDS("compiled_data.RDS")
 make_host_par <- function(x) paste(x[1],"-", x[2])
 thedata$hostpar <- apply(FUN = make_host_par, MAR = 1, X = cbind(as.character(thedata$fish.spc), as.character(thedata$para.spc)))
 thedata$hostpar <- as.factor(thedata$hostpar)                          

@@ -4,7 +4,7 @@
 library(tidyverse)
 library(dplyr)
 
-seal.data<-read.csv('For Analysis_WoodetalData/harborSeals.csv')
+seal.data<-read.csv('data/harborSeals.csv')
 seal.data <- seal.data[,c(1,3)]
 seal.data <- seal.data %>%
   rename(count = HS.WA.SanJuanIslands) %>%
@@ -41,7 +41,7 @@ all.dat.wide<-pivot_wider(data = thedata,
 #thedata<-merge(thedata,harborseals, by="year", all.x=T) #will need this for later functions
 
 #read in seabird data
-seabird<-read.csv("BirdData.csv")
+seabird<-read.csv("data/BirdData.csv")
 seabird<-seabird %>% rename(year="Year")
 #thedata_wide<-merge(thedata_wide, seabird, by="year", all.x=T)
 #thedata<-merge(thedata,seabird, bt="year", all.x=T)
@@ -90,7 +90,7 @@ syearindex <- sapply(X = seal.data$Year, FUN = year.lookup, y = yearlist)
 ns <- nrow(seal.data)
 
 ### Get Temperature Data
-temp.data <- read.csv("For Analysis_WoodetalData/RR_temp.csv", header = T)
+temp.data <- read.csv("data/RR_temp.csv", header = T)
 temp.data <- temp.data%>% 
   dplyr::select(YEAR, temp_na_rm) %>%
   rename(year = YEAR) %>%
