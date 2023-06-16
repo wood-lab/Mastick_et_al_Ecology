@@ -10,7 +10,7 @@ Each fish species' anisakid count and metadata, the temperature data, the harbor
 
 ## Sharing/access Information
 
-Links to other publicly accessible locations of the data: https://github.com/wood-lab/Mastick_et_al_ProcB
+Links to other publicly accessible locations of the data: https://github.com/wood-lab/Mastick_et_al_Ecology
 
 Was data derived from another source?
 If yes, list source(s): 
@@ -23,3 +23,5 @@ Chasco B, Kaplan IC, Thomas A et al. 2017 Estimates of Chinook salmon consumptio
 British Columbia Lightstation Sea-Surface Temperature and Salinity Data (Pacific), 1914-present. https://open.canada.ca/data/en/dataset/719955f2-bf8e-44f7-bc26-6bd623e82884.
 
 National Audubon Society (2020). The Christmas Bird Count Historical Results [Online]. Available http://www.christmasbirdcount.org [October 10, 2022]
+
+Strom A, Francis RC, Mantua NJ, Miles EL, Peterson DL. 2004 North Pacific climate recorded in growth rings of geoduck clams: a new tool for paleoenvironmental reconstruction. Geophysical Research Letters, 31(6).
