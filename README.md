@@ -4,15 +4,15 @@
 Dataset includes anisakid (*Contracaecum* and *Anisakis* spp.) data collected from natural history specimens of five species of fish hosts collected from 1880-2018 in Puget Sound, Washington. These files include Pacific hake (hake_2022.02.21.csv), Pacific herring (herring_2022.02.23.csv), walleye pollock (pollock_2022.02.21.csv), copper rockfish (rockfish_2022.02.21.csv), and surf smelt (smelt_2022.02.21.csv). There is also harbor seal abundance data from Chasco et al. 2017 (harborSeals.csv), pollutant data from Brandenberger et al. 2008 (brandenberger_pollutants.csv), and temperature data from Race Rocks lighthouse (48.2980°N, 123.5315°W) British Columbia Lightstation Sea-Surface Temperature and Salinity Data (RR_temp.csv).
 
 
-## Description of the Data and file structure
+## Description of the data and file structure
 
 Each fish species' anisakid count and metadata, the temperature data, the harbor seal abundance data, and the pollutant data are all housed in independent .csv files in the data folder. For analysis, the fish data (hake, herring, pollock, rockfish, and smelt) have been compiled into one dataset in the compiled_data.RDS file. The code to load the data and compile the fish, seal, temperature, bird, and pollutant data into one dataset is in load_format_data.R. 
 
-# RR_temp.csv
+### RR_temp.csv
 YEAR: year of temperature reading
 temp_na_rm: average temperature, calculated with NAs removed
 
-# brandenberger_pollutants.csv
+### brandenberger_pollutants.csv
 year: year of pollutant reading from Tacoma, WA and Seattle, WA
 Pb:	average lead reading for that year in μg/g
 As:	average arsenic reading for that year in μg/g
@@ -27,8 +27,17 @@ Sig8_lignin:	average lignin reading for that year in mg/g
 Lamb8: average soil biomarker concentration reading for that year
 Bd.V_soil_biomarker: average soil biomarker concentration reading for that year
 
-# harborSeals.csv
-
+### harborSeals.csv
+Year: year of the estimate
+HS.WA.StraitJuanDeFuca: harbor seal population estimate in the Strait of Juan de Fuca	
+HS.WA.SanJuanIslands: harbor seal population estimate in the San Juan Islands, WA
+HS.WA.EasternBays: harbor seal population estimate in the Eastern Bays of Washington	
+HS.WA.PugetSound: harbor seal population estimate from Puget Sound, WA
+HS.WA.HoodCanal: harbor seal population estimate from Hood Canal, WA	
+HS.WA.Georgia.Strait: harbor seal population estimate from Georgia Strait, WA	
+HS.WA.OlympicPeninsula: harbor seal population estimate from the Olympic Peninsula in Washington
+HS.WA.CoastalEstuaries: harbor seal population estimate in the Coastal Estuaries of Washington	
+HS.BC.Inland: harbor seal population estimate in inland British Columbia
 
 
 ## Sharing/access Information
