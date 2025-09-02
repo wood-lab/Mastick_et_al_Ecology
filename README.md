@@ -39,6 +39,19 @@ HS.WA.OlympicPeninsula: harbor seal population estimate from the Olympic Peninsu
 HS.WA.CoastalEstuaries: harbor seal population estimate in the Coastal Estuaries of Washington	
 HS.BC.Inland: harbor seal population estimate in inland British Columbia
 
+#### hake_2022.02.21.csv , herring_2022.02.23.csv , pollock_2022.02.21.csv , rockfish_2022.02.21.csv , smelt_2022.02.21.csv
+Year.Collected: the year the fish was collected from the wild and preserved in the Burke Museum's Ichthyology collection
+Columns named in the format XX_XX_XX: the count of each genus of parasites found in each fish, the suffix indicating the initials of the scientific name of that species in some cases, or "all" in others, where it was found in more than one species. For example, Anisakis_sp_all indicates Anisakis sp. nematodes found throughout the body of the particular host. 
+latjitt	site: the collection site latitude, but the coordinate has been "jittered" by +/- a small amount to reduce overlap in mapping and analysis.	
+Fish.ID: the catalog number of each fish dissected
+Standard.Length..mm.: standard length of the fish in mm
+Total.Length..mm.: total length of the fish in mm
+long: longitude the fish was collected
+lat: latitude the fish was collected	
+fish_density: an estimate of the density of the fish in Puget Sound from that year	
+temp_na_rm: data compiled from the RR_temp.csv dataset, temperature with NAs removed	
+sTemp: temperature standardized to a value between 0-1. 
+Pb	As	Zn	Ni	V	Cr	Cu	Ba	Be	Sig8_lignin	Lamb8	Bd.V_soil_biomarker: pollutant values compiled from brandenberger_pollutants.csv
 
 ## Sharing/access Information
 
